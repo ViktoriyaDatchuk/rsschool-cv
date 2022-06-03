@@ -48,6 +48,10 @@ Oshmyany customs
 Grodno regional customs  
 **10.2017 - 12.2020**
 
+***Licensing Engineer***   
+Belarusian nuclear power station  
+**01.2021 - 01.2022**
+
 ## **Education**
 
  - **University:** Belarusian State University of Informatics and Radioelectronics
