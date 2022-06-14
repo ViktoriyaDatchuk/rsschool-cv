@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: 'Joan', serif;
+  color: #160a0a; 
+}
+
+.header {
+  padding: 0 150px;
+  background-color: darkcyan;
+}
+
+.main {
+  padding: 0 150px;
+  background-color: rgb(206, 228, 221);
+}
+
+.footer {
+  padding: 20px 150px;
+  background-color: darkcyan;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  padding: 0 50px 0 0;
+  width: 50%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 18px;
+  transition: .3s;
+}
+
+.nav-link:hover {
+  color: yellowgreen;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: #160a0a;
+}
+
+h1.section-title {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+h1 {
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  height: 1.5px;
+  background-color: #160a0a;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+}
+
+.job-title {
+  text-align: center;
+  font-size: 26px;
+}
+
+.courses-link {
+  text-decoration: none;
+  color: #a06a6a;
+  transition: color 0.5s;
+}
+
+.courses-link:hover {
+  color: #290e80;
+}
+
+.year {
+  font-size: 18px;
+}
+
+.link {
+  padding-left: 10px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s;
+}
+
+.link:hover {
+  color: white;
+}
+
+.school-picture {
+  float: right;
+}
+
+.my-code {
+  font-size: 14px;
+}
+
+.my-photo {
+  margin-top: 30px;
+  margin-left: 100px;
+  border: 3px solid darkcyan;
+}
+
+.container-photo {
+  width: 50%;
+}
+
+.contacts-item1 {
+  list-style-image: url(img/location.png);
+}
+
+.contacts-item2 {
+  list-style-image: url(img/phone.png);
+}
+
+.contacts-item3 {
+  list-style-image: url(img/email.png);
+}
+
+.contacts-item4 {
+  list-style-image: url(img/discort.png);
+}
+
+.contacts-item5 {
+  list-style-image: url(img/github.png);
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
