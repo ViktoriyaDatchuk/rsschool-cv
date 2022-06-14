@@ -1,13 +1,115 @@
 <!DOCTYPE html>
-<html lang="ru">
- <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Пример веб-страницы</title>
- </head>
- <body>
-  <h1>Заголовок</h1>
-  <!-- Комментарий -->
-  <p>Первый абзац.</p>
-  <p>Второй абзац.</p>
- </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                  <li class="nav-item"><a href="#about-me" class="nav-link">About Me</a></li>
+                  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                  <li class="nav-item"><a href="#code-example" class="nav-link">Code Example</a></li>
+                  <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                  <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                </ul>
+              </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main-container">
+            <div class="container-photo">
+                <img src="img/foto.jpg" width="150" height="200" alt="My photo" class="my-photo">
+            </div>
+            <section class="section" id="profile">
+                <h1 class="section-title">Viktoryia Datchuk</h1>
+                <p class="job-title">Front-end Developer</p>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <ul class="contacts-list">
+                    <li class="contacts-item1"><strong>Location:</strong> Smorgon, Belarus</li>
+                    <li class="contacts-item2"><strong>Phone:</strong> +375 29 198 27 67</li>
+                    <li class="contacts-item3"><strong>Email:</strong> grelada@tut.by</li>
+                    <li class="contacts-item4"><strong>Discort:</strong> ViktoriyaDatchuk</li>
+                    <li class="contacts-item5"><strong>GitHub:</strong> ViktoriyaDatchuk</li>
+                </ul>
+            </section>
+            <section class="section" id="about-me">
+                <h2 class="section-title">About Me</h2>
+                <p class="summary">I am hardworking, persistent and love to learn new things. I can work in a team and multitask.
+                    I always open to new knowledge and ready to develop.</p>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="skills-list">
+                    <li class="skills-item">OOP</li>
+                    <li class="skills-item">Java (Basic)</li>
+                    <li class="skills-item">Git</li>
+                    <li class="skills-item">HTML</li>
+                    <li class="skills-item">CSS</li>
+                </ul>
+            </section>
+            <section class="section" id="code-example">
+                <h2 class="section-title">Code Example</h2>
+                <pre class="my-code">
+    public class Multiply {
+        public static Double multiply(Double a, Double b) {
+            return a * b;
+        }
+    }
+            
+    class Main {
+        public static void main(String[] args) {
+        Multiply multi = new Multiply();
+        System.out.print(multi.multiply(4.6, 7.2));
+        }
+    }
+                </pre>
+            </section>
+            <section class="section" id="experience">
+                <h2 class="section-title">Experience</h2>
+                <p class="my-job"><em>Chief Customs Officer</em><br> Oshmyany customs<br> <b>07.2010 - 09.2017</b></p>
+                <p class="my-job"><em>Senior Customs Officer</em><br> Grodno regional customs<br> <b>10.2017 - 12.2020</b></p>
+                <p class="my-job"><em>Licensing Engineer</em><br> Belarusian nuclear power station<br> <b>01.2021 - 01.2022</b></p>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title">Education</h2>
+                <ul class="education-list">
+                    <li class="education-item"><strong>University:</strong> Belarusian State University of Informatics and Radioelectronics</li>
+                    <li class="education-item"><strong>Courses:</strong>
+                        <ul class="courses-list">
+                            <li class="courses-item"><a href="https://learn.epam.com/detailsPage?id=601f195a-d408-4439-a16d-0630ed2a412e" class="courses-link">Version Control with Git</a></li>
+                            <li class="courses-item"><a href="https://learn.epam.com/detailsPage?id=07464fe7-306f-4aa2-abdb-fb81ba509124" class="courses-link">Computer Science Basics</a></li>
+                            <li class="courses-item"><a href="https://www.udemy.com/course/java_sumin/learn/lecture/23249844?start=0#content" class="courses-link">Java с нуля до Junior+ (in process)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="english">
+                <h2 class="section-title">English</h2>
+                <p class="languages">A2 (I continue to study English and improve my skills)</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <img src="img/icon-footer.png" width="12" height="12" alt="Icon">
+            <span class="year">2022</span>
+            <a href="https://github.com/ViktoriyaDatchuk" class="link">viktoriyadatchuk</a>
+            <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" width="150" height="37" alt="Emblem" class="school-picture"></a>
+        </div>
+    </footer>
+</body>
 </html>
